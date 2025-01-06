@@ -24,23 +24,23 @@
 ```plaintext
 📦Fan_Project
  ┣ 📂ap
- ┃ ┣ 📂listener                 # 이벤트 리스터 구현
- ┃ ┣ 📂model                    # State의 mode 결정 model
- ┃ ┣ 📂presenter                # UI 구현
- ┃ ┣ 📂service                  # 비즈니스 로직 처리
- ┃ ┣ 📜apMain.c                 # 메인 실행 파일
- ┃ ┗ 📜apMain.h                 # 메인 헤더 파일
- ┣ 📂driver                     # 디바이스 드라이브 구성
- ┃ ┣ 📂button                   # 버튼 입력 처리
- ┃ ┣ 📂buzzer                   # buzzer 출력 처리
- ┃ ┣ 📂fan                      # 선풍기 모터 제어
- ┃ ┣ 📂fnd                      # 7Segment 출력 처리
- ┃ ┗ 📂lcd                      # lcd 출력 처리
- ┣ 📂periph                     # 주변기기 구성
- ┃ ┣ 📂GPIO                     # GPIO 핀 제어
- ┃ ┣ 📂timer                    # 타이머 인터럽트 처리
- ┃ ┗ 📂UART0                    # UART 통신 처리
- ┗ 📜main.c                     # main 최상단 파일
+ ┃ ┣ 📂listener         # 이벤트 리스터 구현
+ ┃ ┣ 📂model            # State의 mode 결정 model
+ ┃ ┣ 📂presenter        # UI 구현
+ ┃ ┣ 📂service          # 비즈니스 로직 처리
+ ┃ ┣ 📜apMain.c         # 메인 실행 파일
+ ┃ ┗ 📜apMain.h         # 메인 헤더 파일
+ ┣ 📂driver             # 디바이스 드라이브 구성
+ ┃ ┣ 📂button           # 버튼 입력 처리
+ ┃ ┣ 📂buzzer           # buzzer 출력 처리
+ ┃ ┣ 📂fan              # 선풍기 모터 제어
+ ┃ ┣ 📂fnd              # 7Segment 출력 처리
+ ┃ ┗ 📂lcd              # lcd 출력 처리
+ ┣ 📂periph             # 주변기기 구성
+ ┃ ┣ 📂GPIO             # GPIO 핀 제어
+ ┃ ┣ 📂timer            # 타이머 인터럽트 처리
+ ┃ ┗ 📂UART0            # UART 통신 처리
+ ┗ 📜main.c             # main 최상단 파일
  ```
 ---
 ## HW 구조
