@@ -65,5 +65,7 @@
 <p align="center">
 <img src="./Image/fan FSM.jpg">
 </p>
+
 ----
 
+## 상세 설명
