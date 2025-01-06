@@ -44,15 +44,25 @@
  ```
 ---
 ## HW 구조
-- 
+- ATmega128a : MCU로서 디바이스 제어를 담당
+- Motor Driver : Motor에 전력 및 제어 시퀸스 전달
+- FND : 7 Segment로서 시간 표시
+- LCD : 현재 선풍기의 상태를 화면에 표시
+- Button : 상태 전환 및 타이머 설정을 위한 Trigger
+- Buzzer : 현재의 상태를 소리로 나타내주는 스피커
+- Serial line : 컴퓨터와 MCU를 연결하는 전선
 
 <p align="center">
 <img src="./Image/Fan HW.jpg">
 </p>
 
 ## SW Stack
-- 
-
+- Main : 구동의 최상단에서 작동하는 코드. apMain 함수를 호출.
+- apMain : Init 함수의 구동 및 Listener 함수를 호출.
+- Listener : Event 처리를 위한 코드. Event 발생 시 각 함수를 호출.
+- Model : 각종 변수를 불러오는 Get, Set 함수로 이루어진 함수.
+- Service : 로직 처리를 위한 코드.
+- Presenter : 화면 표시를 위한 코드. 출력을 위한 Device의 함수를 호출.
 <p align="center">
 <img src="./Image/Fan SW Stack.png">
 </p>
