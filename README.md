@@ -62,8 +62,6 @@
     - 초기상태 : OFF
     - Button, UART를 통하여 상태 변환
     - Auto Mode는 Power 3개의 상태를 랜덤으로 구현
-
-<br>
 <p align="center">
 <img src="./Image/fan FSM.jpg">
 </p>
