@@ -85,6 +85,7 @@
 - Button2를 눌러 풍량 조절
 - Button3을 눌러 Auto 모드로 변경. Auto 모드로 들어가기 전의 모드를 기억하여 Auto모드 종료 시 원래 모드로 복귀.
 - Global interrupt를 사용하여 PWM의 Duty Cycle을 구현. Hertz를 변경하여 풍량 조절
+- Auto 모드는 Hertz를 랜덤으로 변경하여 풍량의 세기를 랜덤으로 구현.
 <p align="center">
 <img src="./Image/fan off.png">
 <img src="./Image/fan spd1.png">
@@ -105,4 +106,18 @@
 </p>
 
 ### UART로 Fan 세기 변경
+- Comport Master를 통하여 문자열을 전달하면 이에 맞춰 선풍기를 가동.
+- 수신된 데이터는 내부 버퍼에 저장된 후 처리됨.
+<p align="center">
+<img src="./Image/fan uart.png">
+</p>
 
+### 버튼 사용 선풍기 영상
+<p align="center">
+<img src="./Image/smart fan 3.gif">
+</p>
+
+### UART 사용 선풍기 영상
+<p align="center">
+<img src="./Image/smart fan 4.gif">
+</p>
