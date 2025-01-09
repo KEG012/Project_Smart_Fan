@@ -79,3 +79,30 @@
 ----
 
 ## 상세 설명
+
+### Button으로 Fan 세기 변경
+- Button1을 눌러 선풍기 ON/OFF
+- Button2를 눌러 풍량 조절
+- Button3을 눌러 Auto 모드로 변경. Auto 모드로 들어가기 전의 모드를 기억하여 Auto모드 종료 시 원래 모드로 복귀.
+- Global interrupt를 사용하여 PWM의 Duty Cycle을 구현. Hertz를 변경하여 풍량 조절
+<p align="center">
+<img src="./Image/fan off.png">
+<img src="./Image/fan spd1.png">
+<img src="./Image/fan spd2.png">
+<img src="./Image/fan spd3.png">
+<img src="./Image/fan auto.png">
+</p>
+
+### Button으로 Timer 설정
+- Button4를 눌러 Timer 변경
+- 정확한 시간 구현을 위하여 Global Interrupt를 활용하여 1ms마다 interrupt가 일어나게 설정.
+- Interrupt가 일어날때 마다 count값이 증가(1ms).
+- 타이머가 끝나면 선풍기 OFF.
+<p align="center">
+<img src="./Image/fan 3min.png">
+<img src="./Image/fan 5min.png">
+<img src="./Image/fan 7min.png">
+</p>
+
+### UART로 Fan 세기 변경
+
